@@ -1,0 +1,176 @@
+
+# ============================================================
+# BLOQUEADOR DE LIGAÇÕES — GITIGNORE
+# Segurança, arquivos locais e artefatos gerados
+# ============================================================
+
+# -------------------------
+# Flutter e Dart
+# -------------------------
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+.packages
+build/
+coverage/
+doc/api/
+**/doc/api/
+*.lockfile.tmp
+.flutter-logs/
+.flutter-version
+
+# Manter pubspec.lock no Git para reproduzir as dependências.
+# NÃO ignorar pubspec.lock.
+
+# -------------------------
+# Android e Gradle
+# -------------------------
+.gradle/
+**/.gradle/
+android/local.properties
+**/local.properties
+
+# Saídas de compilação Android
+android/app/debug/
+android/app/profile/
+android/app/release/
+**/outputs/
+**/intermediates/
+**/generated/
+**/tmp/
+
+# Arquivos temporários e logs
+*.log
+*.hprof
+hs_err_pid*
+replay_pid*
+
+# -------------------------
+# Chaves e assinatura Android
+# -------------------------
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.key
+*.pem
+*.der
+*.crt
+*.cer
+key.properties
+**/key.properties
+keystore.properties
+
+# -------------------------
+# Credenciais e segredos
+# -------------------------
+.env
+.env.*
+!.env.example
+secrets/
+secret/
+secrets.*
+credentials/
+credentials.*
+*credentials*.json
+*service-account*.json
+*service_account*.json
+*client_secret*.json
+*private_key*
+*access_token*
+*refresh_token*
+*.mobileprovision
+
+# Arquivos de configuração local que podem conter segredos
+local.properties
+config.local.*
+*.local.json
+*.local.yaml
+*.local.yml
+
+# -------------------------
+# IDEs e editores
+# -------------------------
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.history/
+.project
+.classpath
+.settings/
+
+# -------------------------
+# Sistema operacional
+# -------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.swp
+*.swo
+*~
+*.tmp
+*.bak
+*.orig
+
+# -------------------------
+# Outras plataformas Flutter
+# -------------------------
+
+# iOS / macOS
+ios/Flutter/.last_build_id
+ios/Pods/
+ios/.symlinks/
+macos/Pods/
+macos/Flutter/ephemeral/
+**/Flutter/ephemeral/
+*.xcuserstate
+xcuserdata/
+DerivedData/
+Pods/
+
+# Windows / Linux
+linux/flutter/ephemeral/
+windows/flutter/ephemeral/
+
+# -------------------------
+# Relatórios e artefatos
+# -------------------------
+*.symbols
+*.map.json
+*.apk
+*.aab
+*.ipa
+*.dSYM/
+*.app/
+*.exe
+*.msi
+
+# -------------------------
+# Arquivos de teste e cobertura
+# -------------------------
+**/test/coverage/
+*.lcov
+
+# -------------------------
+# Arquivos pessoais e backups
+# -------------------------
+*.private
+*.secret
+*.backup
+*.old
+*.save
+# Arquivos Flutter gerados para iOS e macOS
+ios/Flutter/ephemeral/
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+macos/Flutter/ephemeral/
+macos/Flutter/Generated.xcconfig
+macos/Flutter/flutter_export_environment.sh
+
+# Arquivos locais gerados por integração nativa
+**/flutter_native_integration.env
